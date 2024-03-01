@@ -1,5 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import Layout from './Components/Layout';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -27,6 +29,11 @@ function App() {
   return (
     <div className="App">
       {}
+      <Routes>
+        <Route path="/" element= {Layout}>
+
+        </Route>
+      </Routes>
     </div>
   );
 }
